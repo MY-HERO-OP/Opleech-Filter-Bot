@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '24314944'))
-API_HASH = environ.get('API_HASH', '608c07ba57d9130d9974c9b3639ec570')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6736774847:AAH2SgQfyFhxV6BS-I1PkRyXLXl5FBEPaN4")
+API_ID = int(environ.get('API_ID', '1701392'))
+API_HASH = environ.get('API_HASH', '96089a340f2892fd06aea683cbfb73c0')
+BOT_TOKEN = environ.get('BOT_TOKEN', "5931364008:AAGsvwZScQxeaJZByrxiZscW1JsO4SsrG30")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -27,7 +27,7 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/e215d12bfd4fa2155
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/9133dc596eabc73750774.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6264350806').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5827766615').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -61,7 +61,7 @@ CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Opleech')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Opleech/371')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello and Hello ❤️')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001944172464'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002063073831'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'WD_Topic_Group')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
