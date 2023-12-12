@@ -1,7 +1,7 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/SudoR2spr/Opleech-Filter-Bot.git /Opleech-Filter-Bot 
+  git clone https://github.com/MY-HERO-OP/Opleech-Filter-Bot.git /Opleech-Filter-Bot 
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /Opleech-Filter-Bot
